@@ -182,6 +182,74 @@
         </div>
     </section>
 
+    <section id="land-parcels" class="lp-section py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="lp-title mb-2">Explore <span class="lp-title-accent">Land Parcels</span></h2>
+                <div class="lp-subtitle">Browse available land parcels across Greater Mohali. Click on any marker to view details and register your interest.</div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <button type="button" class="lp-chip is-active" data-lp-filter="all">All Categories</button>
+                <button type="button" class="lp-chip lp-chip--orange" data-lp-filter="commercial">Commercial</button>
+                <button type="button" class="lp-chip lp-chip--green" data-lp-filter="group-housing">Group Housing</button>
+                <button type="button" class="lp-chip lp-chip--red" data-lp-filter="healthcare">Healthcare</button>
+                <button type="button" class="lp-chip lp-chip--blue" data-lp-filter="education">Education</button>
+                <button type="button" class="lp-chip lp-chip--purple" data-lp-filter="hospitality">Hospitality</button>
+            </div>
+
+            <div class="lp-map-card">
+                <div class="lp-map" id="lpMap" aria-label="Land parcels map">
+                    <div class="lp-map-grid" aria-hidden="true"></div>
+                    <div class="lp-map-zones" aria-hidden="true">
+                        <div class="lp-map-zone lp-map-zone--left">IT City Zone</div>
+                        <div class="lp-map-zone lp-map-zone--right">Residential Zone</div>
+                    </div>
+                    <div class="lp-map-pins" id="lpMapPins" aria-label="Map pins"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="lpParcelModal" tabindex="-1" aria-labelledby="lpParcelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lpParcelModalLabel">Parcel Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-2">
+                        <div class="fw-semibold" id="lpModalTitle">—</div>
+                        <div class="text-body-secondary small" id="lpModalMeta">—</div>
+                        <div class="lp-modal-grid">
+                            <div class="lp-modal-item">
+                                <div class="lp-modal-label">Category</div>
+                                <div class="lp-modal-value" id="lpModalCategory">—</div>
+                            </div>
+                            <div class="lp-modal-item">
+                                <div class="lp-modal-label">Sector</div>
+                                <div class="lp-modal-value" id="lpModalSector">—</div>
+                            </div>
+                            <div class="lp-modal-item">
+                                <div class="lp-modal-label">Area</div>
+                                <div class="lp-modal-value" id="lpModalArea">—</div>
+                            </div>
+                            <div class="lp-modal-item">
+                                <div class="lp-modal-label">Reserve Price</div>
+                                <div class="lp-modal-value" id="lpModalPrice">—</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="#register">Register Interest</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
    
     <footer class="py-4 border-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
