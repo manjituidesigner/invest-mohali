@@ -139,7 +139,8 @@ img.d-inline-block.align-text-top.me-2 {
   inset: 0;
   /* background: linear-gradient(124deg, rgb(0 32 122 / 92%), rgb(177 11 11 / 78%)); */
   /* background: linear-gradient(124deg, rgb(0 32 122 / 86%), rgb(177 11 11 / 64%)); */
-  background: linear-gradient(124deg, rgb(0 32 122 / 92%), rgb(177 11 11 / 74%));;
+  /* background: linear-gradient(124deg, rgb(0 32 122 / 92%), rgb(177 11 11 / 74%));; */
+  background: linear-gradient(124deg, rgb(0 32 122 / 92%), rgb(177 11 11 / 54%));
   z-index: 1;
 }
 
