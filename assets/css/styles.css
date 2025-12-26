@@ -726,6 +726,139 @@ section#focus-sectors {
   }
 }
 
+.rti-light-section {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rti-light-section:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(124deg, rgb(0 32 122 / 92%), rgb(177 11 11 / 74%));
+  z-index: 0;
+}
+
+.rti-light-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.rti-light-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: clamp(18px, 2.5vw, 34px);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.rti-light-left {
+  padding: clamp(6px, 1.2vw, 14px);
+}
+
+.rti-light-title {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  font-size: clamp(28px, 2.6vw, 44px);
+}
+
+.rti-light-text {
+  color: #64748b;
+  font-size: 14px;
+  max-width: 62ch;
+}
+
+.rti-light-btn-primary {
+  background: #0b1b4b;
+  border: 1px solid #0b1b4b;
+  color: #ffffff;
+  font-weight: 800;
+  border-radius: 12px;
+  padding: 11px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rti-light-btn-primary:hover,
+.rti-light-btn-primary:focus {
+  background: #0a1a44;
+  border-color: #0a1a44;
+  color: #ffffff;
+}
+
+.rti-light-btn-outline {
+  background: transparent;
+  border: 2px solid #0b1b4b;
+  color: #0b1b4b;
+  font-weight: 800;
+  border-radius: 12px;
+  padding: 11px 18px;
+}
+
+.rti-light-btn-outline:hover,
+.rti-light-btn-outline:focus {
+  background: rgba(11, 27, 75, 0.06);
+  color: #0b1b4b;
+}
+
+.rti-light-panel {
+  background: #f1f5f9;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.rti-light-panel-title {
+  font-weight: 900;
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.rti-light-info {
+  display: grid;
+  gap: 10px;
+}
+
+.rti-light-info-row {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.rti-light-info-label {
+  font-weight: 900;
+  color: #0f172a;
+  font-size: 12px;
+}
+
+.rti-light-info-value {
+  color: #475569;
+  font-size: 12px;
+}
+
+.rti-light-link {
+  color: #2563eb;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.rti-light-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+  .rti-light-info-row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
 .rti-section {
   background: #0b1220;
 }
